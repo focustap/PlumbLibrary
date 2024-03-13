@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Updated to prevent horizontal scrolling -->
+  
+  <title>Plumb Library</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="Media/plumbLibraryLogoNoText.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/70d78a144a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <header>
+    <div class="top-bar">
+      <a href="index.html"><img src="Media/plumblogo.png" alt="Plumb Library Logo" id="headerLogo"></a>
+
+      <div class="topBarText">
+      
+        <div class="library-text">
+          <p class = "hoursText"><strong>Monday</strong> 1 PM - 8 PM</p>
+          <p class = "hoursText"><strong>Tuesday</strong> 10 AM - 6 PM</p>
+          <p class = "hoursText"><strong>Wednesday</strong> 10 AM - 6 PM</p>
+          <p class = "hoursText"><strong>Thursday</strong> 1 PM - 8 PM</p>
+          <p class = "hoursText"><strong>Friday</strong> 10 AM - 5 PM</p>
+          <p class = "hoursText"><strong>Saturday</strong> 10 AM - 2 PM</p>
+        </div>
+        
+        <br>
+        
+        <!-- <div class="library-text">
+          <a href="https://www.google.com/maps/dir//Joseph+H.+Plumb+Memorial+Library,+17+Constitution+Way,+Rochester,+MA+02770,+United+States/@41.7313656,-70.8215971,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x89e4e82e52963739:0xee282b89a38f3cb!2m2!1d-70.8214861!2d41.7313248?entry=ttu" id = "directionsLink">GET DIRECTIONS</a>
+          17 Constitution Way, Rochester MA<br>
+          <strong>508-763-8600</strong>
+        </div> -->
+
+      </div>
+      <input type="text" id="searchBar" placeholder="Search...">
+      
+    </div>
+
+    <nav>
+      <div class="dropdown">
+        <a href="#" class="dropdownTopItem">Resources<span class="down-caret"></span></a>
+        <div class="dropdownContent">
+          <a href="#">Test 1</a>
+          <a href="#">Test 2</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <a href="#" class="dropdownTopItem">What's Happening<span class="down-caret"></span></a>
+        <div class="dropdownContent">
+          <a href="#">Test 1</a>
+          <a href="#">Test 2</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <a href="kidsAndTeensBase.html" class="dropdownTopItem">Kids & Teens<span class="down-caret"></span></a>
+        <div class="dropdownContent">
+          <a href="kidsAndTeensBase.html">Test 1</a>
+          <a href="#">Test 2</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <a href="#" class="dropdownTopItem">New Books<span class="down-caret"></span></a>
+        <div class="dropdownContent">
+          <a href="#">Test 1</a>
+          <a href="#">Test 2</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <a href="#" class="dropdownTopItem">Online Services<span class="down-caret"></span></a>
+        <div class="dropdownContent">
+          <a href="#">Test 1</a>
+          <a href="#">Test 2</a>
+        </div>
+      </div>
+
+       <div class="dropdown">
+        <a href="#" class="dropdownTopItem">About<span class="down-caret"></span></a>
+        <div class="dropdownContent">
+          <a href="#">Test 1</a>
+          <a href="#">Test 2</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <main>
+
+    <div id="contentWrapper">
+      <div id="slideshow">
+        <img src="Media/BackSummerFixed.jpg" alt = "Library Outside" class="slide"">
+        <img src="Media/libraryPic1Fixed.jpg" alt = "Library Outside" class="slide">
+        <img src="Media/libraryPic2Fixed.jpg" alt = "Library Outside" class="slide">
+        <img src="Media/libraryPic3Fixed.jpg" alt = "Library Outside" class="slide">
+        <img src="Media/LobbyFixed.jpg" alt = "Library Lobby" class="slide">
+        <a class="prev" onclick="changeSlides(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlides(1)">&#10095;</a>
+      </div>
+      
+      <div id="quick-links">
+        <h2 class = "centered">Quick Links</h2>
+        
+        <a href="https://sails.ent.sirsi.net/client/en_US/rochester/?" class = "quickLink" target="_blank" id = "firstQuickLink"><i class="fa-solid fa-book"></i> SAILS Catalog</a>
+        
+        <a href="https://sails.overdrive.com/" target="_blank" class = "quickLink"><i class="fa-solid fa-book-open"></i> Libby</a>
+        
+        <a href="https://www.eventkeeper.com/mars/xpages/P/PLUMB/ekp.cfm?curOrg=PLUMB" target="_blank" class = "quickLink"><i class="fa-solid fa-calendar"></i> Events Calendar</a>
+        
+        <a href="#" target="_blank" class = "quickLink"><i class="fa-solid fa-music"></i> Music Downloads</a>
+        
+        <a href="https://josephplumbma.universalclass.com/" target="_blank" class = "quickLink"><i class="fa-solid fa-school"></i> Classes</a>
+        <a href="" target="_blank" class = "quickLink"><i class="fa-solid fa-building-columns"></i> Museum Passes</a>
+        
+        <a href="https://www.hoopladigital.com/" target="_blank" class = "quickLink"><i class="fa-solid fa-book-open-reader"></i> Hoopla</a>
+        
+        <a href="https://www.worldbookonline.com/?subacct=M0674" target="_blank" class = "quickLink" id = "lastQuickLink"><i class="fa-solid fa-earth-americas"></i> World Book Online</a>
+      </div>
+    </div>
+
+    
+  </main>
+
+  <div class="footerSpacer"></div>
+
+  <footer>
+    
+    <div id = "footerTopContent">
+      <div id = "footerLogoDiv">
+        <a href = "index.html"><img src = "Media/plumblogo.png" alt = "Library Logo" id = "footerLogo"></a>
+      </div>
+      
+      <div id = "footerDirectionsAndSocials">
+        <p><i class="fa-solid fa-compass"></i>17 Constitution Way, Rochester, MA 02770</p>
+        <p><i class="fa-solid fa-envelopes-bulk"></i>P.O. Box 69, Rochester, MA 02770</p>
+        <p><i class="fa-solid fa-envelope"></i>info@plumblibrary.com</p>
+        <p><i class="fa-solid fa-phone"></i>508-763-8600</p>
+      </div>
+    </div>
+
+    <div id = "footerBottomContent">
+      <div id = "footerNavigationLinks">
+
+        <a href = "#" class = "footerSocialLink"><img src = "Media/facebookLogo.png"></a>
+        <a href = "#" class = "footerLink">About</a>
+        <a href = "#" class = "footerLink">Contact</a>
+        <a href = "#" class = "footerLink">Policies</a>
+      </div>
+
+      <div id = "footerCopyright">
+        <a href = "https://oldcolony.us/technical-programs/computer-science/">Copyright © - 2024 - Old Colony RVTHS CS Department</a>
+      </div>
+    </div>
+
+  </footer>
+
+</body>
+
+<script>
+  var slideIndex = 0;
+  var slideInterval;
+
+  function showSlides() {
+    var i;
+    var slides = document.querySelectorAll("#slideshow .slide");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    slides[slideIndex-1].style.display = "block";  
+    slideInterval = setTimeout(showSlides, 5000); // Change image every 5 seconds
+  }
+
+  function startSlideshow() {
+    slideInterval = setTimeout(showSlides, 5000);
+    var slides = document.querySelectorAll("#slideshow .slide");
+    slides[0].style.display = "block";
+  }
+
+  function changeSlides(n) {
+    clearTimeout(slideInterval);
+    slideIndex += n-1;
+    showSlides();
+  }
+
+  startSlideshow();
+
+</script>
+
+  
+</html>

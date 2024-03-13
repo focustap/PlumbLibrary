@@ -1,0 +1,18 @@
+body{
+  text-align: center;
+}
+
+a{
+  color: pink;
+}
+
+a::after {
+  content: "";
+  display: block;
+  
+}
+
+.biggerTitle{
+  font-size: 200%;
+}
+

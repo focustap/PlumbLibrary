@@ -1,0 +1,100 @@
+body {
+  text-align: center;
+  background-color: whitesmoke;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+header {
+  background-color: #3f3f3f;
+  display: block;
+  padding: 0.5rem;
+}
+header nav a {
+  padding: 1rem 1.5rem;
+  color: #fff;
+  text-align: left;
+}
+header nav a:hover {
+  background-color: #2f2f2f;
+}
+header .dropdown {
+  display: inline-block;
+}
+header .dropdown .drop {
+  background-color: #2f2f2f;
+}
+.left-float {
+  float: left;
+}
+.right-float {
+  float: right;
+}
+.wrap {
+  width: 23.5rem;
+  display: block;
+  margin: 10rem auto;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown .drop {
+  background-color: #3498db;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 6px;
+  position: relative;
+  display: inline-block;
+}
+.dropdown > .dropdown-menu {
+  width: 15rem;
+  list-style: none;
+  margin: 0;
+  margin-top: 8px;
+  padding: 0;
+  position: absolute;
+  float: left;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.55s linear;
+  background-color: #fff;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+}
+.dropdown > .dropdown-menu.open {
+  max-height: 300px;
+  height: auto;
+  transition: all 0.25s linear;
+}
+.dropdown > .dropdown-menu > li > a {
+  padding: 0.5rem 1rem;
+  display: block;
+  color: #555;
+  text-align: left;
+  transition: all 0.25s linear;
+}
+.dropdown > .dropdown-menu > li > a:hover {
+  background-color: #3498db;
+  color: #fff;
+}
+.down-caret {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 5px 0 5px;
+  border-color: #ffffff transparent transparent transparent;
+  display: inline-block;
+  margin-left: 6px;
+  top: -3px;
+  position: relative;
+  transform: rotate(0deg);
+  transition: all 0.25s ease-in;
+}
+.open-caret {
+  transform: rotate(180deg);
+  transition: all 0.25s ease-out;
+}
